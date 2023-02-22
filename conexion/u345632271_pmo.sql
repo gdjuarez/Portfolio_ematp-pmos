@@ -38,51 +38,7 @@ CREATE TABLE `dispositivo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `dispositivo`
---
 
-INSERT INTO `dispositivo` (`id`, `dispositivo`, `n_serial`, `numero`, `estado`, `Apellido`, `Curso`) VALUES
-(1, 'Netbook', 'AA', 1, 'disponible', '', ''),
-(2, 'Netbook', 'AA', 2, 'disponible', '', ''),
-(3, 'Netbook', 'AA', 3, 'disponible', '', ''),
-(4, 'Netbook', 'AA', 4, 'disponible', '', ''),
-(5, 'Netbook', 'AA', 5, 'disponible', '', ''),
-(6, 'Netbook', 'AA', 6, 'disponible', '', ''),
-(7, 'Netbook', 'AA', 7, 'disponible', '', ''),
-(8, 'Netbook', 'AA', 8, 'disponible', '', ''),
-(9, 'Netbook', 'AA', 9, 'disponible', '', ''),
-(10, 'Netbook', 'AA', 10, 'disponible', '', ''),
-(11, 'Netbook', 'AA', 11, 'disponible', '', ''),
-(12, 'Netbook', 'AA', 12, 'disponible', '', ''),
-(13, 'Netbook', 'AA', 13, 'disponible', '', ''),
-(14, 'Netbook', 'AA', 14, 'disponible', '', ''),
-(15, 'Netbook', 'AA', 15, 'disponible', '', ''),
-(16, 'Netbook', 'AA', 16, 'disponible', '', ''),
-(17, 'Netbook', 'AA', 17, 'disponible', '', ''),
-(18, 'Netbook', 'AA', 18, 'disponible', '', ''),
-(19, 'Netbook', 'AA', 19, 'disponible', '', ''),
-(20, 'Netbook', 'AA', 20, 'disponible', '', ''),
-(21, 'Netbook', 'AA', 21, 'disponible', '', ''),
-(22, 'Netbook', 'AA', 22, 'disponible', '', ''),
-(23, 'Netbook', 'AA', 23, 'disponible', '', ''),
-(24, 'Netbook', 'AA', 24, 'disponible', '', ''),
-(25, 'Netbook', 'AA', 25, 'disponible', '', ''),
-(26, 'Netbook', 'AA', 26, 'disponible', '', ''),
-(27, 'Netbook', 'AA', 27, 'disponible', '', ''),
-(28, 'Netbook', 'AA', 28, 'BLOQUEADA', '- - -', ''),
-(29, 'Netbook', 'AA', 29, 'BLOQUEADA', '- - -', ''),
-(30, 'Proyector', 'SN 45123290', 100, 'disponible', '', ''),
-(31, 'Televisor', 'sn00987453', 101, 'disponible', '', ''),
-(32, 'Parlantes', '', 102, 'disponible', '', ''),
-(33, 'Reproductor de DVD', 'sn00987997', 103, 'disponible', '', ''),
-(34, 'Calculadoras', '0', 0, 'disponible', '', ''),
-(35, 'Calculadoras', '', 0, 'disponible', '', ''),
-(36, 'LABORATORIO', '****', 300, 'disponible', '', ''),
-(37, 'Cargador net', '', 0, 'disponible', '', ''),
-(38, 'DVD writer', 'usb', 104, 'disponible', '', ''),
-(39, 'Disco Externo', 'verbatin', 105, 'disponible', '', '');
-
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `prestamos`
@@ -99,57 +55,7 @@ CREATE TABLE `prestamos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `prestamos`
---
-
-INSERT INTO `prestamos` (`pmo_id`, `dispositivo_id`, `dispositivo`, `Apellido`, `Curso`, `fecha`, `usuario`) VALUES
-(177, 2, 'Netbook-2', 'Amador', 'AA1', '2022-03-14', 'gdjuarez'),
-(178, 3, 'Netbook-3', 'Amador', 'AA1', '2022-03-14', 'gdjuarez'),
-(179, 5, 'Netbook-5', 'Amador', 'AA1', '2022-03-14', 'gdjuarez'),
-(180, 2, 'Netbook-2', 'devuelta', '-', '2022-03-14', 'gdjuarez'),
-(181, 3, 'Netbook-3', 'devuelta', '-', '2022-03-14', 'gdjuarez'),
-(182, 5, 'Netbook-5', 'devuelta', '-', '2022-03-14', 'gdjuarez'),
-(183, 30, 'Proyector-100', 'JUarez', 'AA1', '2022-03-14', 'gdjuarez'),
-(184, 30, 'Proyector-100', 'devuelta', '-', '2022-03-14', 'gdjuarez'),
-(185, 1, 'Netbook-1', 'Leticia', '', '2022-03-16', 'gdjuarez'),
-(186, 1, 'Netbook-1', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(187, 15, 'Netbook-15', 'Cano', 'atr', '2022-03-16', 'gdjuarez'),
-(188, 34, 'Calculadoras-0', 'santamaria', 'cant 15', '2022-03-16', 'gdjuarez'),
-(189, 34, 'Calculadoras-0', 'santamaria', 'cant 15', '2022-03-16', 'gdjuarez'),
-(190, 15, 'Netbook-15', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(191, 2, 'Netbook-2', 'Camargo y Luque', 'atr', '2022-03-16', 'gdjuarez'),
-(192, 3, 'Netbook-3', 'Camargo y Luque', 'atr', '2022-03-16', 'gdjuarez'),
-(193, 34, 'Calculadoras-0', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(194, 34, 'Calculadoras-0', 'Gomez', '3B  cant 9', '2022-03-16', 'gdjuarez'),
-(195, 35, 'calcu-0', 'Mariano', '4B cant 6', '2022-03-16', 'gdjuarez'),
-(196, 35, 'calcu-0', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(197, 34, 'Calculadoras-0', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(198, 4, 'Netbook-4', 'Velazquez', '3B', '2022-03-16', 'gdjuarez'),
-(199, 5, 'Netbook-5', 'Velazquez', '3B', '2022-03-16', 'gdjuarez'),
-(200, 6, 'Netbook-6', 'Velazquez', '3B', '2022-03-16', 'gdjuarez'),
-(201, 4, 'Netbook-4', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(202, 5, 'Netbook-5', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(203, 6, 'Netbook-6', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(204, 2, 'Netbook-2', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(205, 3, 'Netbook-3', 'devuelta', '-', '2022-03-16', 'gdjuarez'),
-(206, 4, 'Netbook-4', 'Chidichimo', 'AA2', '2022-03-16', 'bettina'),
-(207, 5, 'Netbook-5', 'Atampi', '5B', '2022-03-16', 'bettina'),
-(208, 6, 'Netbook-6', 'Atampi', '5B', '2022-03-16', 'bettina'),
-(209, 7, 'Netbook-7', 'Atampi', '5B', '2022-03-16', 'bettina'),
-(210, 5, 'Netbook-5', 'devuelta', '-', '2022-03-16', 'bettina'),
-(211, 6, 'Netbook-6', 'devuelta', '-', '2022-03-16', 'bettina'),
-(212, 7, 'Netbook-7', 'devuelta', '-', '2022-03-16', 'bettina'),
-(213, 3, 'Netbook-3', 'Changazo', '4c', '2022-03-16', 'bettina'),
-(214, 4, 'Netbook-4', 'devuelta', '-', '2022-03-16', 'bettina'),
-(215, 3, 'Netbook-3', 'devuelta', '-', '2022-03-17', 'bettina'),
-(216, 2, 'Netbook-2', 'Camargo', '', '2022-03-17', 'gdjuarez'),
-(217, 3, 'Netbook-3', 'Camargo', '', '2022-03-17', 'gdjuarez'),
-(218, 34, 'Calculadoras-0', 'Camargo ', 'cant 2', '2022-03-17', 'gdjuarez'),
-(219, 2, 'Netbook-2', 'devuelta', '-', '2022-03-17', 'gdjuarez'),
-(220, 3, 'Netbook-3', 'devuelta', '-', '2022-03-17', 'gdjuarez'),
-(221, 2, 'Netbook-2', 'Centurion', '', '2022-03-17', 'gdjuarez'),
-(222, 3, 'Netbook-3', 'Centurion', '', '2022-03-17', 'gdjuarez'),
-(223, 6, 'Netbook-6', 'lucia', 'eoe', '2022-03-17', 'gdjuarez'),
+),
 (224, 5, 'Netbook-5', 'tito', 'atr', '2022-03-17', 'gdjuarez'),
 (225, 6, 'Netbook-6', 'devuelta', '-', '2022-03-17', 'gdjuarez'),
 (226, 34, 'Calculadoras-0', 'devuelta', '-', '2022-03-17', 'gdjuarez'),
@@ -14156,15 +14062,6 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `user`, `pass`, `apellido_nombre`, `roll`) VALUES
-(60, 'gdjuarez', '4615ce4fc884efed79c659f0507e3bd6e140991c', 'Juarez gustavo', 1),
-(325, 'Bettina', '9d601766d652c523a194941d89e419686e987fb6', 'Garcia Bettina', 2),
-(331, 'rosana', '3890cbdc37c19ddab74173b709a23beba91a9325', 'Rosana Meriles', 2),
-(332, 'Mariel', '1418c40237ee713b2752a18beb0b3335c688b68b', 'Mariel', 2),
-(334, 'Silvia', 'c004fafc9c16f34cf084a3dca7c0fb1c5037390f', 'Giorgetta silvia', 2),
-(335, 'Maria', 'e4d3d3f0fce651d09aee5480ec5e58268ccc2409', 'María Leonor Brid', 2),
-(336, 'Leticia', '7296b4640507a04bc5975fd854207cc971d25488', 'Leticua', 2),
-(338, 'german', '1466fd7f5ef1a529948ff7448ec5370ff7ecc875', 'anibal german', 2);
 
 --
 -- Índices para tablas volcadas
